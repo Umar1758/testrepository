@@ -1,0 +1,156 @@
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+
+
+.newsletter-banner {
+    position: relative;
+    background: $purplethemecolor url(../images/bubles-image-1.png) no-repeat bottom center;
+
+    @media only screen and (max-width: 992px) {}
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
+
+    &:before {
+        content: '';
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: rems(38);
+        color: $whitecolor;
+        margin-bottom: 25px;
+
+        @media only screen and (max-width: 992px) {
+            font-size: rems(26);
+            margin-top: 5px;
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            text-align: center !important;
+        }
+
+        @media only screen and (max-width:480px) {
+            font-size: rems(19);
+        }
+    }
+
+    a {
+        @media only screen and (max-width: 768px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+footer {
+    background: $whitecolor;
+
+    margin-top: 0;
+    padding: 50px 0;
+
+    @media only screen and (max-width: 480px) {
+        padding: 20px 0;
+    }
+
+    .footer {
+        position: relative;
+
+
+
+        .footer-wrapper {
+            .copyright-text {
+                p {
+                    font-size: rems(14);
+                    color: $footercolor;
+                    line-height: 1;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: rems(14);
+                    color: $footercolor;
+                    line-height: 1;
+                    font-weight: 400;
+                }
+
+                span {
+                    display: inline-block;
+                    margin: 0 13px;
+                    color: $footercolor;
+                    font-size: 18px;
+                    vertical-align: middle;
+                }
+            }
+
+            .social-media-links {
+                float: right;
+
+                @media only screen and (max-width: 768px) {
+                    float: none;
+                }
+
+                h3 {
+                    font-weight: 400;
+                    font-size: rems(14);
+                    color: $footercolor;
+                    margin-bottom: 10px;
+
+                    @media only screen and (max-width: 768px) {
+                        margin-top: 15px;
+                    }
+
+                }
+
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-left: 12px;
+
+                        a {
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: red;
+                            line-height: 26px;
+
+                            i {
+                                color: $whitecolor;
+                            }
+
+                            &.fb {
+                                background: #3B5998;
+                            }
+
+                            &.li {
+                                background: #007AB9;
+
+                            }
+
+                            &.tw {
+                                background: #55ACEE;
+
+                            }
+
+                            &.pt {
+                                background: #CB2027;
+
+                            }
+
+                            &.yt {
+                                background: #C4302B;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
